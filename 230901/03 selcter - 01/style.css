@@ -1,0 +1,114 @@
+/*
+전체선택자
+* {
+  color: red;
+}
+
+태그선택자
+h1,
+h2 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+
+
+아이디선택자
+#header {
+  width: 800px;
+  background-color: red;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#wrap {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#aside {
+  width: 200px;
+  background: blue;
+  float: left;
+}
+
+#content {
+  width: 600px;
+  background: green;
+  float: left;
+}
+
+
+클래스선택자
+.select {
+  color: red;
+}
+
+
+
+각 태그에 각 타입에 다른 스타일 부여
+input[type="text"] {
+  background: red;
+}
+
+input[type="password"] {
+  background: blue;
+}
+
+
+
+
+헤더안에 자손과 후손 다 h1
+
+#header h1 {
+  color: red;
+}
+
+헤더안에 자손 h1만
+#header > h1 {
+  color: red;
+}
+
+
+
+
+h1 바로뒤에있는 h2만!
+h1 + h2 {
+  color: red;
+}
+h1뒤에있는 모든 h2
+h1 ~ h2 {
+  background-color: orange;
+}
+
+
+
+반응선택자
+h1:hover {
+  color: red;
+}
+
+h1:active {
+  color: blue;
+}
+
+
+
+상태선택자
+input {
+  background-color: #fff;
+}
+disabled만 효과주고싶을때
+input:disabled {
+  background-color: gray;
+}
+focus가 됐을때 효과줄때
+input:focus {
+  background-color: orange;
+}
+
+*/
