@@ -1,0 +1,9 @@
+h1:first-of-type {
+  color: red;
+}
+h2:first-of-type {
+  color: blue;
+}
+h3:first-of-type {
+  color: green;
+}

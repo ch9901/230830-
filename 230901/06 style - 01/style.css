@@ -1,0 +1,39 @@
+/*
+
+
+* {
+  font-size: 30px;
+  color: red;
+}
+
+div {
+  font-size: 20px;
+}
+
+p:nth-child(2) {
+  font-size: 2em;
+}
+
+p:nth-child(3) {
+  font-size: 50px;
+}
+
+p:nth-child(4) {
+  font-size: 200%; 2em과 동일
+}
+p:nth-child(5) {
+  font-size: 2rem; /*해당요소의 최상위 단계의 설정의 em
+}
+*/
+
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: #f00;
+}
+
+#box2 {
+  width: 50vw;
+  height: 30vh;
+  background-color: #f00;
+}
