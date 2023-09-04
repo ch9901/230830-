@@ -1,0 +1,10 @@
+body {
+  margin: auto;
+  padding: 50px;
+  width: 600px;
+  height: 1000px;
+}
+
+#text {
+  width: 150px;
+}

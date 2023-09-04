@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/01 text/stylewith.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>프론트엔드 개발자 지원서</h1>
+      <p>
+        <strong>HTML, CSS, Javascript</strong> 에 자신있는 웹 퍼블리셔 &
+        프론트엔드 개발자입니다.
+      </p>
+      <hr />
+      <form action="get">
+        <h4>
+          <mark>개인정보</mark>
+        </h4>
+        <!--
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="공백없이 입력하세요" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="number">연락처</label>
+            <input type="text" id="number" />
+          </li>
+        </ul>
+                -->
+
+        <table id="nospace">
+          <tr>
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="공백없이 입력하세요" />
+          </tr>
+          <br />
+          <tr>
+            <label for="number">연락처</label>
+            <input type="text" id="number" />
+          </tr>
+        </table>
+        <h4>
+          <mark>지원분야</mark>
+        </h4>
+        <ul>
+          <li>
+            <label for="web1"
+              ><input type="radio" name="field" id="web1" />웹퍼블리싱</label
+            >
+          </li>
+          <li>
+            <label for="web2"
+              ><input type="radio" name="field" id="web2" />웹 애플리케이션
+              개발</label
+            >
+          </li>
+          <li>
+            <label for="web3"
+              ><input type="radio" name="field" id="web3" />개발환경 개선</label
+            >
+          </li>
+        </ul>
+        <h4>
+          <mark>사용가능 언어</mark>
+        </h4>
+        <table>
+          <tr>
+            <td>구분</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JS</td>
+            <td>TS</td>
+            <td>React</td>
+          </tr>
+          <tr>
+            <td>구분</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JS</td>
+            <td>TS</td>
+            <td>React</td>
+          </tr>
+          <tr>
+            <td>구분</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JS</td>
+            <td>TS</td>
+            <td>React</td>
+          </tr>
+        </table>
+        <h4>
+          <mark>지원동기</mark>
+        </h4>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="지원동기를 간략히 작성 해 주세요"
+        ></textarea>
+        <div id="submit">
+          <input type="submit" value="접수하기" />
+          <input type="reset" value="다시쓰기" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
