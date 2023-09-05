@@ -1,0 +1,107 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+#main_header {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+  border-bottom: 1px solid #000;
+  background-color: #124088;
+  color: #fff;
+}
+
+/* GNB */
+#main_gnb {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background: #32324a;
+}
+
+#main_gnb > .left {
+  float: left;
+  overflow: hidden;
+}
+
+#main_gnb > .right {
+  float: right;
+  overflow: hidden;
+  /* 해당영역을 침범하지않게 끔 overflow를 여기에도 주는것이 정석임 */
+}
+
+#main_gnb > ul.left > li {
+  float: left;
+}
+
+#main_gnb > ul.right > li {
+  float: right;
+}
+
+#main_gnb a {
+  display: block;
+  padding: 10px 20px;
+  border-left: 1px solid #5f6673;
+  border-right: 1px solid #242a37;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Main */
+#wrap {
+  background: #71b1d1;
+  overflow: hidden;
+}
+
+#wrap > #main_lnb {
+  float: left;
+  width: 200px;
+}
+#wrap > #content_wrap {
+  float: left;
+  width: 100%;
+  margin-right: -200px;
+  /* 왼쪽에있는 공간 200px을 염두해두고 오른쪽으로 옮기겠다 */
+}
+
+#main_lnb a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  /* padding: 0 0 0 15px; 위의 값이랑 같지만 위처럼 쓰는것이 편하니까 위의 것처럼 적기*/
+  border-top: 1px solid #96d6e6;
+  border-bottom: 1px solid #6298b2;
+  color: #fff;
+  font-weight: bold;
+}
+
+#content {
+  background: #fff;
+  border-left: 1px solid #000;
+}
+
+article {
+  padding: 10px;
+  width: 615px;
+  /* 반응형 배우기 전에 text 잘리는거 방지하기위해서 width 값을 넣어준거임 */
+}
+
+/* Footer */
+#main_footer {
+  padding: 10px;
+  border-top: 3px solid #000;
+  text-align: center;
+}
