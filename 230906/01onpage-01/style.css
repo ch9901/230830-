@@ -1,0 +1,90 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+
+nav {
+  background: #f8f2d4;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+a.nav_btn {
+  display: inline-block;
+  /* <a>는 인라인요소기때문에 block처리로 바꿔줌 */
+  width: 20%;
+  /* 각각의 요소가 20% */
+  height: 50px;
+  line-height: 50px;
+}
+
+nav a:link,
+nav a:visited {
+  /* 링크가 걸려있거나, 방문했을 때 */
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* section */
+section {
+  width: 100%;
+  height: 950px;
+  /* 각각의 요소가 100% 너비, 900의 높이 */
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 1px solid #000; 
+  내가 준 설정이 잘 먹고있나? 궁금할때 확인하는 방법*/
+}
+
+section > h2 {
+  text-align: center;
+  line-height: 925px;
+  /* 원래 수직정렬은 height값과 같은 값(900px)을 주지만 위의 바를 고정시켜놓을 것이기 때문에 위의 바의 값을 생각하여 수직 가운데 정렬을 해주어야함 */
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 1px 2px 1px #000;
+  text-transform: uppercase;
+  /* 모든 글자 텍스트 대문자로하기 */
+}
+
+.page1 {
+  background: url("/01onpage-01/img/eu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* 지정한 요소를 다 덮도록 배경이미지를 확대/축소 */
+}
+.page2 {
+  background: url("/01onpage-01/img/us.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page3 {
+  background: url("/01onpage-01/img/ch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page4 {
+  background: url("/01onpage-01/img/jp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
