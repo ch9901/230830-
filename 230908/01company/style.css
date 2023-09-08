@@ -1,0 +1,281 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+header .inner {
+  /* border: 1px solid red; */
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
+header .inner h1 a {
+  color: #444;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+header .inner .util li {
+  float: left;
+}
+
+header .inner .util li a {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  color: #555;
+  /* border: 1px solid red; */
+  padding: 0px 10px;
+}
+header .inner #gnb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header .inner #gnb li {
+  float: left;
+}
+
+header .inner #gnb li a {
+  display: block;
+  font-size: 15px;
+  color: #555;
+  font-weight: bold;
+  padding: 20px 40px;
+}
+
+header .inner #gnb li a:hover {
+  background-color: #555;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Video(Figure) */
+figure {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  /* 비디오위에 텍스트를 250px 내려서 시작하기 위해 값을 줌 */
+  padding-top: 250px;
+}
+/* 비디오를 담는 섹션임 */
+
+figure video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+figure .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+figure .inner h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 120px;
+  /* 아래 작은 텍스트와의 간격을 위해 */
+  margin-bottom: 20px;
+}
+
+figure .inner p {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+figure .inner a {
+  display: block;
+  width: 400px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+figure .inner a:hover {
+  background: #fff;
+  color: #555;
+  /* 색이 천천히변하게 애니메이션 넣어보고싶당 */
+}
+
+/* NEWS section */
+section {
+  width: 100%;
+  padding: 200px 0;
+  margin-bottom: 200px;
+}
+
+section .inner {
+  width: 1180px;
+  margin: 0 auto;
+  /* 일반적인 footer와 section 띄우기 */
+  margin-bottom: 90px;
+}
+
+section .inner h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section .inner .wrap {
+  width: 100%;
+}
+
+section .inner .wrap article h2 {
+  margin-bottom: 10px;
+}
+section .inner .wrap article p {
+  color: #777;
+  font-size: 14px;
+}
+
+section .inner .wrap article h2 a {
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+section .inner .wrap article {
+  width: 280px;
+
+  float: left;
+  margin-right: 20px;
+  /* 사진마다의 간격 */
+}
+
+section .inner .wrap article:last-child {
+  margin-right: 0;
+  /* 마진값을 주면 width때문에 사진이 밑으로 내려가므로 이를 고치기 위해 마지막 요소에만 마진 값을 0으로 주었음.  */
+}
+
+section .inner .wrap article .pic {
+  width: 100%;
+  height: 120px;
+  /* 이미지가 주어지지않았을 때, 이미지의 크기가 작을때를 대비해서 뒤에 컬러를 주는것 */
+  background: #333;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+section .inner .wrap article .pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background: #333;
+  padding: 100px 0;
+  border-top: 1px solid #888;
+  /* 위에 텍스트랑 겹치니까 mt준것 하지만 이 방법보다는 위(section)에서 값을 내리는 경우가 많음 */
+  /* margin-top: 70px; */
+}
+
+footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+footer .inner .upper {
+  width: 100%;
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+}
+
+footer .inner .upper::after {
+  content: "";
+  display: block;
+  /* 블럭처리해주고 그 다음 영역은 float해주지않겠다 */
+  clear: both;
+}
+
+footer .inner .upper h1 {
+  float: left;
+  font-weight: bold;
+  font-size: 24px;
+  color: #666;
+}
+
+footer .inner .upper ul {
+  float: right;
+}
+
+footer .inner .upper ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+footer .inner .upper ul li a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+}
+
+footer .inner .lower {
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer .inner .lower address {
+  width: 100%;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+footer .inner .lower p {
+  width: 100%;
+  color: #777;
+  font-size: 12px;
+}
