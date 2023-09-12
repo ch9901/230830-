@@ -1,0 +1,125 @@
+/* 개발자가 사용하고자하는 화면의 전체가로너비 : 960px
+설계하고자하는 박스 너비 : 900px */
+
+/* 가변마진 */
+/* * {
+  margin: 0;
+  padding: 0;
+}
+#wrap { */
+/* 960px */
+/* width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
+}
+
+#wrap div {
+  display: inline-block;
+  width: 31%; */
+/* 300px/960 */
+/* height: 100%;
+}
+
+#wrap div:first-child {
+  margin-right: 36.7%; */
+/* 360/960 */
+/* background: #1f518b;
+}
+
+#wrap div:last-child {
+  background: #f7e046;
+} */
+
+/* 가변패딩 */
+/* #wrap {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
+    padding: 4.15%;
+
+
+} */
+
+/* calc함수 */
+
+/* #wrap div { */
+/* width: calc(매개변수(매개 값)); */
+/* width: calc(100%-100px);
+  height: 200px;
+  margin: 50px;
+  background: yellow;
+} */
+
+/* em, rem */
+/* #para { */
+/* font-size: 6em; */
+/* 1em = 16px 6em = 96px */
+/* } */
+
+/* #para p { */
+/* font-size: 0.66em; */
+/* (64px/96px) 줄이는거라서 *100안함!
+  64px을 주고싶다고해서 4em을 주면 안된다>부모요소를 상속받아서 6em의 4em이 되는것이다. 24em이 되는 것!
+  그냥 4em을 주고싶을때 4rem을 주면 된다! root요소의 16px 4rem*/
+/* } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrap {
+  width: 90%;
+  margin: 0 auto;
+  border: 4px solid #000;
+}
+
+#wrap div {
+  display: inline-block;
+  height: 100px;
+}
+
+#wrap div:first-child {
+  background: #f45750;
+}
+
+#wrap div:nth-child(2) {
+  background: #40b0f9;
+}
+#wrap div:nth-child(3) {
+  background: #00d2a5;
+}
+#wrap div:nth-child(4) {
+  background: #ff884d;
+}
+
+#wrap div:last-child {
+  background: #464646;
+}
+
+@media all and (min-width: 320px) {
+  #wrap div {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  #wrap div {
+    width: 49.5%;
+  }
+
+  #wrap div:last-child {
+    width: 100%;
+  }
+}
+@media all and (min-width: 1024px) {
+  #wrap div {
+    width: 19.7%;
+  }
+
+  #wrap div:last-child {
+    width: 19.6%;
+  }
+}
