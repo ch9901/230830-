@@ -1,0 +1,143 @@
+@import url("/02responsible/reset.css");
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+
+/* header */
+.cfixed::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header {
+  position: relative;
+  padding: 18px 5%;
+  /* border: 1px solid #000; */
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  font-size: 26px;
+  font-weight: normal;
+  color: #3151b5;
+}
+
+.header .gnb {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #3151b5;
+}
+
+.header .gnb li {
+  border-bottom: 1px solid #303f9f;
+}
+
+.header .gnb li a {
+  display: block;
+  padding: 14px 0 14px 5%;
+  color: #fff;
+  font-size: 14px;
+}
+
+.header .gnb li a:hover {
+  background: #5470c5;
+}
+
+.header .menu_toggle_btn {
+  float: right;
+  /* border: 1px solid #f00; */
+  width: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.header .menu_toggle_btn span {
+  display: block;
+  /* span은 인라인 요소니까 */
+  width: 100%;
+  height: 2px;
+  background: #3f51b5;
+}
+
+.header .menu_toggle_btn span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* article slider */
+.slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* section content */
+/* display */
+.sec_tit {
+  font-size: 40px;
+  color: #3f51b5;
+  font-weight: normal;
+}
+
+.display_section {
+  text-align: center;
+  margin-top: 59px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.display_section .sec_tit {
+  margin-bottom: 30px;
+}
+
+.display_section .desc {
+  color: #616161;
+  line-height: 2;
+  /* line-height 값을 2로 주는것은 본인의 글자높이를 2배를 가져가겠다는소리 */
+}
+
+/* 주위로 아무것도(밑의 요소들) 따라붙지않게 */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* promotion */
+
+.promotion_section {
+  margin-top: 68px;
+}
+.promotion_section .promo_list li {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.promotion_section .promo_list li:first-child {
+  margin-top: 0;
+}
+
+.promotion_section .promo_list li img {
+  height: 52px;
+}
+
+.promotion_section .promo_list li h3 {
+  margin: 29px 0 20px;
+  color: #3f51b5;
+  font-weight: normal;
+}
+
+.promotion_section .promo_list li p {
+  font-size: 14px;
+  color: #616161;
+  line-height: 1.5;
+}
