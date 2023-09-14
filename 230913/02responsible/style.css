@@ -141,3 +141,407 @@
   color: #616161;
   line-height: 1.5;
 }
+
+/* divider */
+.divider {
+  width: 90%;
+  margin: 77px auto;
+}
+
+/* work section */
+.work_section .sec_tit {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.work_section .work_list li {
+  width: 100%;
+}
+
+.work_section .work_list li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.work_section .work_list li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.work_section .work_list li a:hover::before {
+  opacity: 0.8;
+}
+
+.work_section .work_list li .info {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  opacity: 0;
+  /* 평상시에 보이면 안돼! */
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.work_section .work_list li a:hover .info {
+  /* 앵커태그(사진)에 마우스가 오버되었을때~ */
+  opacity: 1;
+}
+
+.work_section .work_list li .info h3 {
+  font-weight: normal;
+  margin-top: 23px;
+  margin-bottom: 7px;
+  font-size: 23px;
+}
+
+.work_section .work_list li .info span {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.work_section .work_list li img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* margin-bottom: 50px; */
+}
+
+/* blog section*/
+
+.m_divider {
+  width: 20%;
+  margin: 77px auto;
+}
+
+.blog_section .sec_tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.blog_section .blog_list li {
+  width: 100%;
+
+  margin-top: 45px;
+}
+
+.blog_section .blog_list li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blog_section .blog_list li time {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #929292;
+}
+
+.blog_section .blog_list li h3 {
+  color: #424242;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+/* contact section*/
+.contact_section {
+  margin-top: 109px;
+}
+
+.contact_section .sec_tit {
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+/* .contact_section .form_box .form {
+  float: left;
+  width: 48%;
+} */
+
+.contact_section .form_box .form input {
+  padding-bottom: 13px;
+  margin-bottom: 38px;
+}
+
+.contact_section .form_box .textarea textarea {
+  height: 165px;
+}
+.content_section .form_box .sendbtn {
+  margin-top: 60px;
+  text-align: right;
+}
+
+.contact_section .form_box .sendbtn button {
+  cursor: pointer;
+  background: #3f51b5;
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  border: 0;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  /* 모바일영역은 좁으니까 사라지게만듬 */
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #757575;
+  color: #3151b5;
+  font-size: 12px;
+  border-radius: 1;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #3151b5;
+}
+fieldset {
+  border: none;
+  /* form태그들 보더 없애고 위에 적용한 borderbottom값만 보이게 하려고 */
+}
+
+/* footer section*/
+.footer {
+  margin-top: 104px;
+}
+
+.footer iframe {
+  width: 100%;
+  height: 320px;
+}
+
+.footer p {
+  margin: 21px 0;
+  color: #3151b5;
+  text-align: center;
+}
+
+/* tablet */
+@media all and (min-width: 768px) {
+  /* header */
+  .header {
+    padding: 28px 52px;
+  }
+
+  .header .gnb {
+    display: block;
+    float: right;
+    position: static;
+    /* static : 작성한 순으로 보이게 */
+    width: auto;
+    top: 40px;
+    right: 0;
+    margin-top: 17px;
+    background: none;
+    border: 1px solid #000;
+  }
+
+  .header .gnb li {
+    float: left;
+    /* 세로로되어있던 걸 가로로 올리려고! */
+    margin-left: 21px;
+    border-bottom: none;
+  }
+
+  .header .gnb li a {
+    color: #3f51b5;
+    font-size: 16px;
+    padding: 0;
+    font-weight: normal;
+  }
+
+  .header .menu_toggle_btn {
+    display: none;
+  }
+
+  /* display: ; */
+  .display_section {
+    margin-top: 95px;
+  }
+
+  /* promotion */
+  .promotion_section {
+    margin-top: 110px;
+  }
+
+  .promotion_section .promo_list li {
+    float: left;
+    width: 23%;
+    margin-top: 0;
+    margin-left: 2%;
+  }
+  /* work */
+  .work_section {
+    margin-top: 118px;
+  }
+  .work_section .sec_tit {
+    margin-bottom: 76px;
+  }
+  .work_section .work_list li {
+    width: 50%;
+    float: left;
+  }
+  .work_section .work_list li .info {
+    left: 37px;
+  }
+  .work_section .work_list li:hover .info {
+    transform: translateY(30px);
+  }
+
+  /* blog */
+  .blog_section {
+    margin: 124px;
+  }
+
+  .blog_section .sec_tit {
+    margin-bottom: 110px;
+  }
+
+  .blog_section .blog_list li {
+    float: left;
+    width: 31%;
+    margin-left: 2.3%;
+    margin-top: 0;
+  }
+  /* contact */
+  .contact_section {
+    margin-top: 176px;
+  }
+
+  .contact_section .sec_tit {
+    margin-bottom: 130px;
+  }
+
+  .contact_section .form_box .form,
+  .contact_section .form_box .textarea {
+    float: left;
+    width: 48%;
+  }
+
+  .contact_section .form_box .form {
+    margin-right: 2.5%;
+  }
+
+  .contact_section .form_box input:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact_section .form_box .textarea textarea {
+    height: 171px;
+  }
+
+  /* footer */
+  .footer iframe {
+    height: 432px;
+  }
+
+  .footer p {
+    margin: 34px 0;
+  }
+}
+
+/* PC */
+@media all and (min-width: 1132px) {
+  .display_section {
+    text-align: left;
+  }
+
+  .display_section .sec_tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .display_section .desc {
+    float: right;
+    color: #616161;
+    line-height: 1.9;
+    width: 600px;
+    position: relative;
+  }
+  .display_section .desc::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 2px;
+    height: 44px;
+    background: #e0e0e0;
+  }
+
+  .promotion_section .promo_list li {
+    width: 23%;
+    margin-left: 1.7%;
+  }
+
+  .work_section .sec_tit {
+    text-align: left;
+  }
+
+  .work_section .work_list li {
+    width: 25%;
+  }
+  .blog_section {
+    margin-top: 10px;
+    position: relative;
+  }
+  .blog_section .sec_tit {
+    float: left;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -8px;
+  }
+  .blog_section .blog_list {
+    float: right;
+    width: 74%;
+  }
+
+  .blog_section .blog_list li {
+    width: 31%;
+    margin-left: 2.3%;
+  }
+  .contact_section .sec_tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .contact_section .form_box {
+    float: right;
+    width: 74%;
+  }
+
+  .contact_section .form_box .form,
+  .contact_section .form_box .textarea {
+    width: 48%;
+  }
+
+  .contact_section .form_box .form {
+    margin-right: 2.3%;
+  }
+}
