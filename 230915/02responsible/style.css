@@ -1,0 +1,76 @@
+@import url("/01responsible/reset.css");
+
+#wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.header h1 span {
+  color: rgb(161, 5, 5);
+}
+.header span:nth-child(2) {
+  width: 150px;
+  border: 3px solid blue;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.header span:nth-child(4) {
+  width: 90%;
+  border: 3px solid lightgray;
+  margin-bottom: 60px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #000;
+  width: 90%;
+  height: 200px;
+}
+
+label {
+  border: 1px solid #000;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+input {
+  border: 1px solid #f00;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+.input .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.input .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.check {
+}
