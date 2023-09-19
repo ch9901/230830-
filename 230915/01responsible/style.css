@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("/01responsible/reset.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
@@ -145,3 +146,152 @@ nav {
     top: 50%;
   }
 }
+=======
+@import url("/01responsible/reset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+header {
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+}
+.logo img {
+  height: 22px;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb li a {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.gnb li a:hover {
+  color: #fff;
+}
+
+.gnb li a:hover::after {
+  width: 30px;
+  height: 60px;
+  border: 1px solid #f00;
+}
+
+.sns {
+  text-align: center;
+  margin-right: -5px;
+}
+
+.sns a {
+  margin: 7px;
+}
+
+.trigger {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+  .logo {
+    padding: 10px;
+  }
+
+  .gnb {
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+  }
+
+  .gnb li a {
+    display: block;
+    padding: 8px;
+    margin: 0;
+  }
+
+  .gnb li a:hover {
+    background: #000;
+    width: 100%;
+  }
+  .sns {
+    background: #7c7c7c;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 8px;
+  }
+
+  .sns a {
+    color: #fff;
+  }
+
+  .sns a:hover {
+    color: #000;
+  }
+
+  .gnb,
+  .sns {
+    display: none;
+  }
+  .gnb.on,
+  .sns.on {
+    display: flex;
+  }
+
+  .trigger {
+    display: block;
+    width: 25px;
+    height: 15px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .trigger span {
+    background: #000;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+
+  .trigger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+    /* 첫번째 선을 돌리는거라서 3번째 선이랑 크로스가 되도록 50%의 위치를 주는 것 */
+  }
+
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+}
+>>>>>>> d525a3dafcf877a019612c6fc588f1addd18de35

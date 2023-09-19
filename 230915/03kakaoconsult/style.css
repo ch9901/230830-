@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* reset */
 * {
   margin: 0;
@@ -237,3 +238,244 @@ body {
 .adtext p {
   font-size: 3px;
 }
+=======
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#body {
+  width: 495px;
+  height: 802px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px grey;
+  border-radius: 3px;
+}
+
+#wrap {
+  width: 495px;
+  height: 681px;
+  /* border: 1px solid #f00; */
+  display: flex;
+}
+
+#wrap .up {
+  /* border: 1px solid #000; */
+  width: 87px;
+  height: 681px;
+  background: #ececed;
+}
+
+#wrap .nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* border: 1px solid #f00; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .up .nav_up,
+#wrap .up .nav_bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  height: 168px;
+  gap: 26px;
+}
+
+#wrap .up .nav_up span,
+#wrap .up .nav_bottom {
+  font-size: 30px;
+  color: #acadb1;
+}
+
+#wrap .up .nav_up span:nth-child(2) {
+  color: #343740;
+}
+
+#wrap .up .nav_up .floatnum {
+  display: none;
+}
+
+.nav_bottom {
+  /* border: 1px solid #000; */
+  margin-bottom: 40px;
+}
+
+#main {
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  display: block;
+  width: 413px;
+  height: 681px;
+  overflow: hidden;
+}
+
+#main .header .icon_forscreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#main .header .icon_forscreen span {
+  /* border: 1px solid #000; */
+  margin-right: 16px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+#main .header .icon_forscreen span:first-child {
+  border-top: 1px solid #343740;
+  width: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header .chat_selc {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid #000; */
+  height: 53px;
+  line-height: 53px;
+  margin-left: 30px;
+  width: 355px;
+}
+
+.header .chat_selc .chat {
+  font-size: 20px;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+}
+.header .chat_selc > span:nth-child(2) {
+  font-size: 16px;
+  margin-left: 10px;
+  /* border: 1px solid #000; */
+}
+
+.icon_forchat {
+  margin-left: 178px;
+  /* border: 1px solid #000; */
+  width: 111px;
+}
+
+.icon_forchat span {
+  /* border: 1px solid #000; */
+  font-size: 20px;
+  color: #acadb1;
+  padding: 3px;
+}
+
+.chat_list {
+  width: 394px;
+  height: 88px;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chat_list:nth-child(4) {
+  background: rgb(239, 239, 239);
+}
+
+.profile {
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.chat_left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.chat_left > .chat_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat_left .chatdes {
+  font-size: 15px;
+  color: #343740;
+  margin-right: 20px;
+}
+
+.chat_right {
+  /* border: 1px solid #000; */
+  margin-left: 100px;
+  font-size: 12px;
+  color: #929292;
+  margin-bottom: 0;
+}
+.chat_right .chat_num {
+  display: block;
+  border: 1px solid #f00;
+  width: 26px;
+  height: 20px;
+  background: crimson;
+  color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#down {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid #000; */
+  width: 495px;
+  height: 121px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  z-index: 10px;
+}
+
+.ad {
+  /* border: 1px solid #000; */
+  width: 394px;
+  height: 77px;
+  display: flex;
+  flex-direction: row;
+}
+.ad img {
+  width: 155px;
+  height: 75px;
+  border-radius: 3px;
+}
+.adtext {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.adtext h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.adtext p {
+  font-size: 3px;
+}
+>>>>>>> d525a3dafcf877a019612c6fc588f1addd18de35
