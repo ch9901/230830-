@@ -1,0 +1,38 @@
+div.event
+	section.event_header
+		span.event
+		span.eventicon_pause
+			i
+		span.아름언니class(icon_seeall)
+		
+	section.event_box
+		div.event_des
+			img
+				a
+			span
+			span
+		
+div.special
+	section.special_header
+		span
+		span.아름언니class(icon_seeall)
+	
+	section.special_box
+		div.special_ad01
+			img
+			span
+			p
+		div.special_selct
+			div.special_suite
+				span.special_suite_title
+					span.special_suite_des
+			div.cineliving
+				span.cineliving_title
+				span.cineliving_des							
+			div.fourdx
+				span.fourdx_title
+				span.fourdx_des
+			div.cinedechef
+				span.cinedechef_title
+				span.cinedechef_des
+		
