@@ -1,0 +1,37 @@
+#wrap {
+  border: 1px solid #000;
+  width: 300px;
+  height: 450px;
+  padding: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section {
+  text-align: center;
+}
+.img {
+  display: flex;
+}
+
+.img img {
+  width: 300px;
+  height: 450px;
+  transition: all 0.2s ease-out;
+  animation: slide;
+}
+
+.img img:first-child {
+  margin-right: 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-350px);
+  }
+}
+/* .btn button:nth-child(2):focus {
+} */

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 232, 232);
+}
+/* 
+.buttons {
+  width: 100px;
+  height: 300px;
+  border: 1px solid #000;
+} */
+
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrap_content01 {
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid #000;
+  width: 1040px;
+  height: 462px;
+}
+
+#wrap_content01 .movie_chart {
+  display: flex;
+  width: 980px;
+  border: 1px solid red;
+  justify-content: space-between;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.movie_chart2 {
+  display: none;
+}
+
+.slider_section_content01 {
+  position: relative;
+}
+
+.prev_btn,
+.next_btn {
+  background: #fff;
+  display: inline-block;
+  border: 1px solid gray;
+  color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.prev_btn {
+  position: absolute;
+  top: 100px;
+  left: -30px;
+}
+
+.next_btn {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
