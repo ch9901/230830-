@@ -1,0 +1,100 @@
+.projectgallery {
+  display: grid;
+  /* calc(100vh - 600px) = 1fr */
+  grid-template-rows: 300px calc(100vh - 600px) 300px;
+}
+.projectgallery .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+
+.projectgallery .items div {
+  /* border: 1px solid #000; */
+  /* 화면너비변화에 따른 높이값 고정 */
+  height: 300px;
+}
+
+.projectgallery .story {
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  /* border: 1px solid #000; */
+}
+
+/* 이미지 공통설정 */
+.items div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* top image */
+.items.top div:nth-child(1) {
+  background-image: url("./3/project-image-01.jpg");
+}
+.items.top div:nth-child(2) {
+  background-image: url("./3/project-image-02.jpg");
+}
+.items.top div:nth-child(3) {
+  background-image: url("./3/project-image-03.jpg");
+}
+.items.top div:nth-child(4) {
+  background-image: url("./3/project-image-04.jpg");
+}
+.items.top div:nth-child(5) {
+  background-image: url("./3/project-image-05.jpg");
+}
+
+/* bottom image */
+.items.bottom div:nth-child(1) {
+  background-image: url("./3/project-image-06.jpg");
+}
+.items.bottom div:nth-child(2) {
+  background-image: url("./3/project-image-07.jpg");
+}
+.items.bottom div:nth-child(3) {
+  background-image: url("./3/project-image-08.jpg");
+}
+.items.bottom div:nth-child(4) {
+  background-image: url("./3/project-image-09.jpg");
+}
+.items.bottom div:nth-child(5) {
+  background-image: url("./3/project-image-10.jpg");
+}
+
+/* mobile */
+@media all and (max-width: 767px) {
+  .projectgallery {
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .projectgallery .story {
+    grid-row: 1;
+  }
+
+  .projectgallery .story h1 {
+    font-size: 19px;
+    letter-spacing: -1px;
+  }
+}
+
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .projectgallery {
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .projectgallery .items {
+    grid-template-columns: repeat(5, auto);
+    margin-top: 5px;
+  }
+  .projectgallery .items div {
+    height: 150px;
+  }
+  .projectgallery .story {
+    grid-row: 1;
+  }
+}
+
+

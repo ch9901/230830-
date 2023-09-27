@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn_outer {
+  .btn {
+    color: #fff;
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    background: #555;
+    position: relative;
+    transition: 0.5s;
+    // 마우스 오버 시 배경색상 투명하게
+    &:hover {
+      background: transparent;
+    }
+    &::before,
+    &::after {
+      content: "";
+      // 겹치게하려고
+      position: absolute;
+      top: 0;
+      left: 0;
+      // 너비는 부모요소로 부터 상속받기
+      width: inherit;
+      height: inherit;
+      border: 1px solid #fff;
+      // 평상시에는 없어야하니까
+      opacity: 0;
+      transition: 0.5s;
+    }
+    // hover 됐을 때 before가
+    &:hover::before {
+      opacity: 1;
+      transform: rotate(45deg);
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: rotate(-45deg);
+    }
+  }
+}

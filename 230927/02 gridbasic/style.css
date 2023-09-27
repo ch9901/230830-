@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  /* 행을 몇개를 만들거냐 */
+  grid-template-rows: 100px 1fr 100px;
+  /* 열을 몇개를 만들거냐 */
+  grid-template-columns: 300px 1fr 300px;
+  height: 100vh;
+  grid-gap: 10px;
+}
+
+.container div {
+  background: skyblue;
+  padding: 20px;
+  border: 1px solid #000;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* 클래스 명으로도 줄수있네 .. */
+.header {
+  grid-column: 1/4;
+}
+
+.footer {
+  grid-column: 2/4;
+}
+
+.menu{
+  grid-row: 2/4;
+}

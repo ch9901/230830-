@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  /* 행을 몇개를 만들거냐 */
+  grid-template-rows: 100px 1fr 1fr 1fr 100px;
+  /* 열을 몇개를 만들거냐 */
+  grid-template-columns: 300px 1fr 300px;
+  height: 100vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "menu main top"
+    "menu main aside"
+    "menu main bottom"
+    "footer footer footer";
+}
+
+.container > div {
+  background: rgb(219, 255, 227);
+  padding: 20px;
+  border: 2px solid #a0d2af;
+  border-radius: 3px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #5d7e67;
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main > div{
+background: #a0d2af;
+color: #fff;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer {
+  grid-area: footer;
+}
+.top {
+  grid-area: top;
+}
+
+.bottom {
+  grid-area: bottom;
+}
