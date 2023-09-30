@@ -1,0 +1,280 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: Airglyphs;
+  src: url("/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff") format("woff"), url("/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "pretendard";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 15%;
+  height: 150px;
+  background-color: #d8595e;
+  float: left;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  font-family: "Airglyphs";
+}
+.logo .airbnb-logo {
+  background: url("./content/airbnlogo.png") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 20%;
+  right: 37%;
+  width: 60px;
+  height: 64px;
+  color: #fff;
+  text-align: center;
+}
+.logo .airbnb-logo p {
+  margin-top: 45px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #d8595e;
+}
+
+.navtxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  line-height: 80px;
+}
+
+.gnb ul {
+  font-family: "Airglyphs";
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+}
+.gnb ul li {
+  margin: 0 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon div {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 20px;
+}
+.icon div:nth-child(3) {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3215686275);
+  width: 90px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  position: relative;
+}
+.icon div:nth-child(3) i:nth-child(1) {
+  position: absolute;
+  margin-top: 17px;
+  left: 16px;
+}
+.icon div:nth-child(3) i:nth-child(2) {
+  position: absolute;
+  margin-top: 10px;
+  right: 12px;
+  font-size: 28px;
+}
+
+.sectit-gallery {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  border-bottom: 1px solid #c6c6c6;
+  z-index: -10;
+  font-size: 1.25em;
+}
+.sectit-gallery span {
+  width: 200px;
+  height: inherit;
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 1.56rem;
+  font-weight: 600;
+  color: #525252;
+}
+.sectit-gallery span p {
+  font-size: 1rem;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .imggrid {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 20px;
+}
+.main .imggrid div {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.main .imggrid div:hover {
+  filter: grayscale(0%);
+}
+.main .imggrid .img-1 {
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-926638381418918258/original/ff037c2c-2d78-4625-a8e7-34efbf241544.jpeg?im_w=1200");
+}
+.main .imggrid .img-2 {
+  background-image: url("https://a0.muscache.com/im/pictures/b4a9684a-dee0-4a07-af2d-2007c0ea391e.jpg?im_w=1200");
+}
+.main .imggrid .img-3 {
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-49676256/original/346eb304-91c7-4d9b-b78a-1ee1f445507e.jpeg?im_w=1200");
+}
+.main .imggrid .img-4 {
+  background-image: url("https://a0.muscache.com/im/pictures/043ada40-cfd5-442c-bd79-1cc72542b4d7.jpg?im_w=1200");
+}
+.main .imggrid .img-5 {
+  background-image: url("https://a0.muscache.com/im/pictures/2cd5348f-a30f-4564-9cec-61b612a273bd.jpg?im_w=720");
+}
+.main .imggrid .img-6 {
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-719143055433906472/original/e858b7c3-3702-43ed-8c95-da88663d90e4.jpeg?im_w=720");
+}
+.main .imggrid .img-7 {
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-759025495368939148/original/3e20559d-41a1-4d63-830f-51fbc21e7701.jpeg?im_w=720");
+}
+.main .imggrid .img-8 {
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-948349494139949632/original/8128ba25-d1cf-423a-b33d-3c84a4e44e3d.jpeg?im_w=720");
+}
+.main .imggrid .img-9 {
+  background-image: url("https://a0.muscache.com/im/pictures/0f52b46a-16fe-472f-a04b-eec52680f162.jpg?im_w=720");
+}
+.main .imggrid .img-10 {
+  background-image: url("https://a0.muscache.com/im/pictures/abe8a52c-681c-48d4-877d-553676a156c5.jpg?im_w=720");
+}
+.main .imggrid .img-11 {
+  background-image: url("https://a0.muscache.com/im/pictures/c9204225-182c-4a9a-9f69-77d6744eddc5.jpg?im_w=720");
+}
+.main .imggrid .img-12 {
+  background-image: url("https://a0.muscache.com/im/pictures/10b05ba5-e214-4660-a1e8-065c68e0424f.jpg?im_w=720");
+}
+.main .input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.main .input button {
+  font-weight: 500;
+  padding: 10px 15px;
+  background: #d8595e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #d8595e;
+  cursor: pointer;
+}
+.main .input .input-left input {
+  padding: 10px;
+  border: 2px solid #d8595e;
+  border-radius: 5px;
+}
+.main .pagetoggle {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.main .pagetoggle span {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #d8595e;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  color: #d8595e;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.main .pagetoggle span:hover {
+  background: #d8595e;
+  color: #fff;
+}
+.main .pagetoggle .sidebtn {
+  width: 210px;
+  height: 30px;
+  position: absolute;
+}
+.main .pagetoggle .sidebtn span {
+  background: #d8595e;
+  color: #fff;
+  top: 0;
+  display: inline-block;
+  position: absolute;
+}
+.main .pagetoggle .sidebtn span:nth-child(1) {
+  left: 0;
+}
+.main .pagetoggle .sidebtn span:nth-child(2) {
+  right: 0;
+}
+.main .pagetoggle .sidebtn span:hover {
+  background: #fff;
+  color: #d8595e;
+}
+.main .pagetoggle .numbtn {
+  font-weight: 500;
+  z-index: 10;
+}
+
+footer {
+  color: #7f7f7f;
+  background: #ddd;
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid #cecece;
+}
+footer span {
+  line-height: 100px;
+  padding: 25px;
+}/*# sourceMappingURL=style.css.map */
