@@ -1,0 +1,194 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+$font-base: 10px;
+$color-base: #fff;
+
+// @mixin 함수 명
+@mixin default {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6em;
+  background: #f8f8f8;
+}
+
+@mixin heading {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: crimson;
+  }
+
+  span {
+    color: crimson;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include default;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.portfolio {
+  margin: 15px;
+  h1 {
+    @include heading;
+    font-size: $font-base * 5;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    div {
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      // hover됐을 때 밑에서 올라오는걸 평상시에 안보이게하기위해
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      position: relative;
+
+      a {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // 가운데로 조정
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+        transition: 0.3s;
+        font-size: $font-base * 4;
+        color: $color-base;
+      }
+      span {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        text-align: center;
+        padding: $font-base;
+        color: $color-base;
+        transition: 0.3s;
+        background: rgba(41, 41, 41, 0.7);
+      }
+
+      &:hover i {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+
+      &:hover span {
+        bottom: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      span,
+      i,
+      &::before {
+        transition: 0.3s;
+        pointer-events: none;
+      }
+    }
+    .focus {
+      grid-area: span 2 / span 2;
+      // 같은개념 -> 2행 2열을 가져가라!
+      // grid-column: span 2;
+      // grid-row: span 2;
+    }
+  }
+}
+
+.featherlight {
+  .featherlight-content {
+    width: 100%;
+    height: 100%;
+    // 외부플러그인을 가져오면 해당 플러그인의 margin값을 따르게 되어있으므로 그걸 무시하기위한 !important
+    // 위의 바를 없애기 위함
+    max-height: 100% !important;
+    margin: 0 !important;
+  }
+  .featherlight-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .featherlight-close-icon {
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px;
+    background: crimson !important;
+    color: $color-base !important;
+    border-radius: $font-base * 5;
+    font-size: 28px;
+    top: 90% !important;
+    left: 30px;
+  }
+}
+
+@media all and (max-width: 1366px) and (min-width: 768px) {
+  body {
+    height: auto;
+  }
+  .portfolio {
+    h1 {
+      font-size: $font-base * 4;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  body {
+    height: auto;
+  }
+  .portfolio {
+    h1 {
+      font-size: $font-base * 3;
+    }
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+      .focus {
+        grid-area: span 1 / span 1;
+      }
+    }
+  }
+}
