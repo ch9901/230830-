@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./script.js"></script>
+  <body>
+    <div id="contents">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsuuaDCCr4TeCjyhTvzyiXqzrO3oCGWZVDA&usqp=CAU"
+        alt="sales"
+      />
+      <ul>
+        <li>
+          <label for="oPrice"> 원래가격 </label>
+          <input type="text" name="" id="oPrice" />원
+        </li>
+        <li>
+          <label for="rate"> 할인율 </label>
+          <input type="text" name="" id="rate" />%
+        </li>
+        <li>
+          <button onclick="showPrice()">할인가격 계산하기</button>
+        </li>
+      </ul>
+    </div>
+    <p>결과값이 하단 박스에 표기됩니다.</p>
+    <div id="showResult"></div>
+  </body>
+</html>
