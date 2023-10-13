@@ -1,0 +1,139 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+body {
+  font-family: "pretendard";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+li {
+  list-style: none;
+}
+#wrap {
+  width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+header input {
+  width: 250px;
+  height: 20px;
+  color: gray;
+  font-size: 10px;
+}
+
+.header-input img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 100px;
+  top: 22px;
+}
+
+header img:nth-child(3) {
+  width: 15px;
+  height: 15px;
+  margin-right: 50px;
+}
+
+.ad {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.ad img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-right: 10px;
+}
+.adinner span {
+  display: inline-block;
+  font-size: 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.navigations {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.gnb {
+  position: absolute;
+  left: 0;
+}
+.gnb ul li {
+  background: #ddd;
+  width: 80px;
+}
+
+.gnb ul li {
+  padding: 10px 30px;
+  color: grey;
+  width: 80px;
+}
+
+.gnb ul li:hover {
+  background: #fff;
+  color: #000;
+}
+
+.gnb ul a:nth-child(1) li {
+  background: #fff;
+  color: #000;
+}
+.gnb ul a:nth-child(7) li {
+  background: #000;
+  color: #fff;
+}
+
+.lnb {
+  position: absolute;
+  right: 20px;
+}
+.lnb ul li {
+  background: #fff;
+  padding: 10px;
+  color: grey;
+}
+
+.more {
+  /* border: 1px solid #000; */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.more div {
+  padding: 10px;
+  background: grey;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: #fff;
+  font: 12px;
+}
