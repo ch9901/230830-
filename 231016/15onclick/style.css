@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#item {
+  position: relative;
+}
+img {
+  border-radius: 10px;
+}
+button {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 5px;
+  color: rgb(87, 87, 87);
+}
+.over {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.detail {
+  width: 400px;
+  text-align: left;
+  line-height: 1.8;
+  display: none;
+}
+
+#cover {
+  border: 5px solid transparent;
+}
