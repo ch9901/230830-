@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js"
+      integrity="sha512-nSyCMLkMXufahoaK1hApST5ixHZ8dGQ9eD0igqK8EbXHT4X99xQR4wtiMw7lUIcTqJUpisYcy+G5MfLKrzYwzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./fullpage.js/prefullpage.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="https://www.naver.com" class="navbar-brand"
+          ><img src="../imgs_231018/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" id="topMenu">
+          <li data-menuanchor="1stBook">MacBook&iMac</li>
+          <li data-menuanchor="2ndBook">Website</li>
+          <li data-menuanchor="3rdBook">R Data</li>
+          <li data-menuanchor="video-list">Video</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fullpage 시작 -->
+    <div id="fullpage">
+      <div id="book1" class="section book-container" data-anchor="1stBook">
+        <div class="container">
+          <h1>맥북 & 아이맥 - 맥 하이시에라 판</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <img src="../imgs_231018/book1.png" alt="" />
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <ul>
+                <li>저자 : 전차뇽~</li>
+                <li>졸려 : 집갈래</li>
+                <li>페이지 : 20827쪽</li>
+                <li>가격 : 49,000원</li>
+              </ul>
+            </div>
+          </div>
+          <div class="book-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            ipsam nesciunt maiores laboriosam velit ipsa harum quae eaque quos
+            unde optio excepturi qui tempora voluptatibus, sed voluptatem
+            quisquam omnis aliquid.
+          </div>
+        </div>
+      </div>
+      <div id="book2" class="section book-container" data-anchor="2ndBook">
+        <div class="container">
+          <h1>으아아아아아악</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <img src="../imgs_231018/book2.png" alt="" />
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <ul>
+                <li>저자 : 닝닝농</li>
+                <li>졸려 : 집갈래</li>
+                <li>페이지 : 2쪽</li>
+                <li>가격 : 14,900원</li>
+              </ul>
+            </div>
+          </div>
+          <div class="book-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            ipsam nesciunt maiores laboriosam velit ipsa harum quae eaque quos
+            unde optio excepturi qui tempora voluptatibus, sed voluptatem
+            quisquam omnis aliquid.
+          </div>
+        </div>
+      </div>
+      <div id="book3" class="section book-container" data-anchor="3rdBook">
+        <div class="container">
+          <h1>쉽게 배우는 R 데이터 분석</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <img src="../imgs_231018/book3.png" alt="" />
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <ul>
+                <li>저자 : 삥삐뺘</li>
+                <li>졸려 : 보내줘</li>
+                <li>페이지 : 207쪽</li>
+                <li>가격 : 13,000원</li>
+              </ul>
+            </div>
+          </div>
+          <div class="book-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            ipsam nesciunt maiores laboriosam velit ipsa harum quae eaque quos
+            unde optio excepturi qui tempora voluptatibus, sed voluptatem
+            quisquam omnis aliquid.
+          </div>
+        </div>
+      </div>
+      <div id="video-list" class="section container" data-anchor="video-list">
+        <h1>동영상 강의</h1>
+        <div class="row slide">
+          <div class="col-md-4 col-sm-4">
+            <img src="../imgs_231018/book4.png" alt="" />
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3>일러 - 동영상강의</h3>
+            <p>저자 직강 무료 동영상 강의</p>
+            <p>강사 : 모름쓰</p>
+            <p>책 큐알찍어라</p>
+            <p>재생목록 바로가기 : https://www.naver.com</p>
+          </div>
+        </div>
+        <div class="row slide">
+          <div class="col-md-4 col-sm-4">
+            <img src="../imgs_231018/book5.png" alt="" />
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3>일러 - 동영상강의</h3>
+            <p>저자 직강 무료 동영상 강의</p>
+            <p>강사 : 모름쓰</p>
+            <p>책 큐알찍어라</p>
+            <p>재생목록 바로가기 : https://www.naver.com</p>
+          </div>
+        </div>
+        <div class="row slide">
+          <div class="col-md-4 col-sm-4">
+            <img src="../imgs_231018/book6.png" alt="" />
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3>일러 - 동영상강의</h3>
+            <p>저자 직강 무료 동영상 강의</p>
+            <p>강사 : 모름쓰</p>
+            <p>책 큐알찍어라</p>
+            <p>재생목록 바로가기 : https://www.naver.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
