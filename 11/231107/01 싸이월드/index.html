@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e8e165a7b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="outerbox">
+        <div class="wrapper">
+          <div class="wrapper-left">
+            <div class="wrapper-left-header">
+              <div class="today">
+                <span>today</span>
+                <span class="zero">0</span>
+                <span>| TOTAL</span>
+                <span class="count">76323</span>
+              </div>
+            </div>
+            <div class="wrapper-left-body">
+              <div class="left-body-header">
+                <div class="left-body-header">
+                  <div class="left-body-header-gray"></div>
+                  <div class="left-body-header-line"></div>
+                </div>
+              </div>
+              <div class="left-body-profile">
+                <div class="profile-detail">
+                  <i class="fab fa-git-square"></i> <span>contact</span>
+                </div>
+                <div class="profile-detail">
+                  <i class="fas fa-envelope"></i> <span>contact</span>
+                </div>
+                <div class="profile-detail">
+                  <i class="fab fa-facebook-square"></i> <span>contact</span>
+                </div>
+                <div class="profile-detail">
+                  <i class="fab fa-instagram-square"></i> <span>contact</span>
+                </div>
+              </div>
+              <div class="left-body-footer">
+                <div class="wrapper-feel">
+                  <div class="feel-title">오늘의 기분</div>
+                  <form>
+                    <select>
+                      <option>최고😆</option>
+                      <option>짜증😈</option>
+                      <option>왕짜증🫥</option>
+                      <option>우울😢</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-right">
+            <div class="wrapper-right-header">
+              <div class="right-header-title">사이좋은 사람들, 싸이월드</div>
+              <div class="right-header-setting">
+                사생활보호설정 <i class="fas fa-caret-right"></i>
+              </div>
+            </div>
+            <div class="wrapper-right-body">
+              <iframe
+                id="contentFrame"
+                src="./home.html"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+          <nav class="navigation">
+            <div id="menu-home" class="navigation-item" onclick="menuHome()">
+              Home
+            </div>
+            <div id="menu-game" class="navigation-item" onclick="menuGame()">
+              Game
+            </div>
+            <div
+              id="menu-jukebox"
+              class="navigation-item"
+              onclick="menuJukebox()"
+            >
+              Jukebox
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

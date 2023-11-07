@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-header {
+  width: 100%;
+}
+.wrapper-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  color: #55b2b4;
+  font-size: 13px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 8px;
+}
+
+.divide-line {
+  width: 100%;
+  border-top: 1px solid gray;
+}
+.album-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12px;
+}
+
+.album-wrapper-item .album-thumnail {
+  width: 120px;
+  height: 120px;
+  border-radius: 2px;
+}
+
+.album-wrapper-item .album-songtitle {
+  font-size: 11px;
+  font-weight: bold;
+  color: #0f465e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.album-wrapper-item .album-artist {
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-body {
+  width: 100%;
+}
+.album-table {
+  width: 100%;
+  padding: 8px;
+  border-spacing: 0;
+}
+
+.album-table th {
+  background: #eee;
+  color: gray;
+  font-size: 10px;
+  height: 20px;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  border-bottom: 1px dashed gray;
+  padding: 20px;
+}
+
+.album-table td {
+  color: #0f465e;
+  font-size: 10px;
+  height: 20px;
+  border-bottom: 1px dashed gray;
+}
+
+.albumtable-checkbox {
+  width: 5%;
+  text-align: center;
+}
+
+.albumtable-number {
+  width: 10%;
+  text-align: center;
+}
+.albumtable-song {
+  width: 45%;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  color: tomato;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-align: center;
+  padding: 1px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.album-artist {
+  width: 30%;
+  text-align: center;
+}
+.albumtable-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.albumtable-footer button {
+  font-size: 8px;
+  color: gray;
+  padding: 3px;
+  background: linear-gradient(180deg, #fff 0% #fff 57%, #ddd 100%);
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.albumtable-footer-center {
+  color: tomato;
+}

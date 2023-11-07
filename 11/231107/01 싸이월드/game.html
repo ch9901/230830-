@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css" />
+    <script defer src="./game.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-header">
+        <div class="header-title">
+          <div class="title">GAME</div>
+          <div class="subtitle">TODAY CHOICE</div>
+        </div>
+        <div class="divide-line"></div>
+      </div>
+      <div class="game-container">
+        <img src="../img/word.png" alt="wordgame" />
+        <div class="game-title">끝말잇기</div>
+        <div class="game-subtitle">제시어 : <span id="word">산기슭</span></div>
+        <div class="word-text">
+          <form>
+            <input
+              id="my-word"
+              class="textbox"
+              type="text"
+              placeholder="단어를 입력하세요"
+            /><input
+              class="search"
+              type="submit"
+              value="입력"
+            />
+          </form>
+        </div>
+        <div id="result" class="word-result">결과😶‍🌫️</div>
+      </div>
+      <div class="game-container">
+        <img src="../img/lotto.png" alt="lottogame" />
+        <div class="game-title">LOTTO</div>
+        <div class="game-subtitle">버튼을 누르세요</div>
+        <div class="game-lotto-number">
+          <span>3, </span>
+          <span>5, </span>
+          <span>12, </span>
+          <span>32, </span>
+          <span>38, </span>
+          <span>41</span>
+        </div>
+        <button class="wrapper-lotto-btn">SHOT !</button>
+      </div>
+    </div>
+  </body>
+</html>
