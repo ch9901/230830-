@@ -1,0 +1,9 @@
+{
+  "imges": [
+    { "path": "./img/1.jpg", "caption": "images1", "info": "아이유예쁘다" },
+    { "path": "./img/2.jpg", "caption": "images2" },
+    { "path": "./img/3.jpg", "caption": "images3" },
+    { "path": "./img/4.jpg", "caption": "images4" },
+    { "path": "./img/5.jpg", "caption": "images5" }
+  ]
+}
