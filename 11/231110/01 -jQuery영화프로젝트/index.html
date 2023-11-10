@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 타이틀 -->
+      <hgroup id="title">
+        <h1 data-name="information">Information</h1>
+        <h1 data-name="chracter">Character</h1>
+        <h1 data-name="multimedia">Multimedia</h1>
+      </hgroup>
+      <!-- container -->
+      <section id="container">
+        <div id="main" data-name="main">
+          <img src="../img/Middle_Foreground.png" alt="main" />
+        </div>
+        <div id="information" data-name="information">
+          <img src="../img/Information_Image.png" alt="info" />
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus id, rerum doloremque omnis corporis dignissimos dicta
+              delectus consectetur laudantium corrupti consequuntur nostrum
+              minima sequi accusamus error, fugiat quos ducimus et. Odit
+              accusantium voluptatibus veritatis delectus minus inventore
+              dolortetur laudantium corrupti consequuntur nostrum minima sequi
+              accusamus error, fugiat quos ducimus et. Odit accusantium
+              voluptatibus veritatis delectus minus inventore dolor ratione
+              error magni fugiat cum itaque quibusdam, odio eaque aperiam
+              tempora ad dicta neq ratione error magni fugiat cum itaque
+              quibusdam, odio eaque aperiam tempora ad dicta neque, eum, labore
+              esse est voluptas tenetur? Consequuntur, iure? Quos voluptatem
+              veniam ipsa quisquam facilis! Explicabo tenetur saepe ex nulla
+              ullam dolor sunt, dolorum totam doloribus vel quis distinctio id
+              corporis commodi excepturi incidunt cupiditate fugiat repudiandae
+              dolorem placeat. Est ipsum magni cupiditate accusantium. Hic quod
+              magni et architecto deleniti neque iusto vel, atque delectu
+            </p>
+          </div>
+        </div>
+        <div id="character" data-name="character">
+          <a href="#">LeftButton</a>
+          <a href="#">RightButton</a>
+          <article class="show">
+            <h1>Princess Ann</h1>
+            <img src="../img/Character_Text_1.png" alt="ann01" />
+            <img src="../img/Character_1.png" alt="ann02" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quo ipsa quia! Consectetur asperiores, tempore
+              expedita obcaecati exercitationem recusandae, sapiente aliquid ab
+              laudantium voluptatum deleniti quo natus possimus dignissimos
+              unde.
+            </p>
+          </article>
+          <article>
+            <h1>Joe Bradley</h1>
+            <img src="../img/Character_Text_2.png" alt="zoe01" />
+            <img src="../img/Character_2.png" alt="zoe02" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+              doloremque architecto dolorum neque repellendus optio explicabo.
+              Fuga obcaecati repudiandae alias. Sunt sapiente officiis
+              perspiciatis reprehenderit harum. Voluptates optio totam quaerat.
+            </p>
+          </article>
+          <article>
+            <h1>Rodovich</h1>
+            <img src="../img/Character_Text_3.png" alt="vich01" />
+            <img src="../img/Character_3.png" alt="vich02" />
+          </article>
+        </div>
+        <div id="multimedia" data-name="multimedia">
+          <!-- <video
+            src="https://www.youtube.com/embed/ELb4S8P3q20?si=0n8hmbulqKfPPKqB&amp;controls=0"
+            width="940"
+            height="500"
+            controls="controls"
+          ></video> -->
+          <iframe
+            width="940"
+            height="465"
+            src="https://www.youtube.com/embed/ELb4S8P3q20?si=0n8hmbulqKfPPKqB&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </section>
+      <!-- 네비게이션 -->
+      <nav id="main-navigation">
+        <ul>
+        <li><a href="#"data-target="information">Movie info</a></li>
+        <li><a href="#"data-target="character">Multimedia</a></li>
+        <li><a href="#"data-target="multimedia">Character</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+      </nav>
+    </div>
+  </body>
+</html>
