@@ -1,0 +1,20 @@
+/* body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+div {
+  margin: 10px 20px;
+}
+canvas {
+  border: 1px solid #000;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+canvas {
+  background: #ccc;
+}
