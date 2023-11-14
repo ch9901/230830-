@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: #ff5305;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    color: #fff;
+    i {
+      color: #fff;
+    }
+    b {
+      font-weight: normal;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}
+
+.adimg {
+  width: 100%;
+  height: 450px;
+  background: url(https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg)
+    no-repeat center center;
+  background-size: cover;
+  .main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    .top-left {
+      height: 80px;
+      color: #fff;
+      font-size: 20px;
+      i {
+        color: #fff;
+      }
+    }
+    .top-right {
+      display: flex;
+      gap: 10px;
+      button {
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 3px;
+        &:first-child {
+          background: transparent;
+          border: 2px solid #fff;
+        }
+        &:nth-child(2) {
+          background: #ff5305;
+          border: 2px solid #ff5305;
+        }
+        &:last-child {
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .main-des {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h1 {
+      color: #fff;
+      font-size: 40px;
+    }
+    p {
+      width: 500px;
+      text-align: center;
+      color: #fff;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #ff5305;
+      color: #fff;
+      border-radius: 3px;
+      border: none;
+    }
+  }
+}
+.search {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  form {
+    position: relative;
+    input {
+      width: 500px;
+      padding: 10px 20px;
+      border-radius: 3px;
+      border: transparent;
+      background: #eee;
+      &::placeholder {
+        color: gray;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: gray;
+    }
+  }
+  button {
+    padding: 10px 20px;
+    background: #ff5305;
+    border: transparent;
+    border-radius: 3px;
+    color: #fff;
+  }
+}
+.mid-des {
+  margin-top: 50px;
+  span {
+    font-size: 25px;
+    font-weight: normal;
+  }
+}
+
+.albums {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    img {
+      width: 180px;
+      height: 180px;
+    }
+    span {
+      font-size: 12px;
+    }
+    p {
+      color: gray;
+      font-size: 10px;
+    }
+  }
+}
