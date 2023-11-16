@@ -1,0 +1,35 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* common css */
+body {
+  background: rgb(255, 254, 251);
+}
+div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.box1 {
+  background: rgb(255, 190, 85);
+}
+.box2 {
+  background: rgb(252, 160, 85);
+}
+.box3 {
+  background: rgb(250, 141, 68);
+}
