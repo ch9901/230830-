@@ -1,0 +1,38 @@
+{
+  //target : 컴파일링을 하고자하는 자바스크립트의 버전을 어떤 버전으로 설정할거냐! ESNext -> 가장 최신거를쓸거야!
+  //module : 데이터를 가져오는 방식?
+  //outDir : src폴더 안에있는 ts 파일을 컴파일링해서 어디로 배출해줄거냐~ dist > dist 라는 폴더로 보내주세용 -> tsc를 적으면 dist 라는 파일이 생성되면서 해당 폴더에 index.js파일이 생성된다.
+  //strict : 타입스크립트의 엄격함을 살짝 완화해주고싶당 -> false 개 엄격 -> true
+  //moduleDetection : ts 파일이 다르더라도 변수명이 같으면 실행x  hello.ts const a=1 index.ts const a=”hello” 이게 안된다. 해결하려면 force로 바꿔주기
+  //esModuleInterop : 협업시 양쪽에서 모듈을 다같이 쓸 수 있게끔하는거
+  //"moduleResolution": "Node" npm에서 찾지못하는 요소들을 node에서 찾아줌
+  //baseUrl : 함수를 모듈화 시킬 때 export, import 할때 경로값에 항상 . 이 들어가니까 그걸 귀찮으니까 안해도되게 하는거임
+  //path : 공통 된 경로값으로 항상 갖고오고싶을때 기본으로 세팅 { "*": ["src/*"] } 모든거 : "src파일안에"
+  //"sourceMap": true : 몇번째 버전에 뭐시기 맵파일 생성하는거
+  //"downlevelIteration": true, : 이터러블한 객체를 쓰는데 오류가나기도함 해당 문제를 문제없이 쓰게하기위함
+  //"noImplicitAny": true : 애니땜빵 인정 false : 애니땜빵 노인정
+  //"allowJs": false 자바스크립트에서 만든거 타입에서 쓰려할때 못씀 true값으로 바꾸면 가능쓰
+  //"strictPropertyInitialization": false 생성자함수에 타입이 지정이안되었더라도 넘어가주라
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": { "*": ["src/*"] },
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strictPropertyInitialization": false
+  },
+  "ts-node": {
+    "esm": false
+  },
+  //어디안에있는지 정의하는 것 만약 src 라는 파일을 만들어서 ts파일을 저장한다면  "include": ["src"]
+  "include": ["src"]
+}
