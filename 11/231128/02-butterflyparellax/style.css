@@ -1,0 +1,31 @@
+/* reset */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdf6d6;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.box {
+  /* width: 40px;
+  height: 40px;
+  background: #ff8e62; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.box img {
+  width: 100px;
+  height: 100px;
+}
