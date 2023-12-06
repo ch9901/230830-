@@ -1,0 +1,36 @@
+.Button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  white-space: nowrap;
+  font-family: "KNPSKkomi-Regular00";
+  font-weight: 600;
+}
+
+.Button_default {
+  background: #ececec;
+  color: #000;
+}
+
+.Button_positive {
+  background: #4e7d4e;
+  color: #fff;
+}
+
+.Button_negative {
+  background: tomato;
+  color: #fff;
+}
+
+.Button_custom {
+  background: #fff;
+  color: #888;
+  border: 1px solid #888;
+}
+.Button_custom:hover {
+  background: #ddd;
+  color: #888;
+  border: 1px solid transparent;
+}
