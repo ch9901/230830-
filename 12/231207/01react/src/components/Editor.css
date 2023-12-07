@@ -1,0 +1,54 @@
+.Editor {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Editor .editor_section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.Editor h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Editor input,
+textarea {
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "KNPSKkomi-Regular00";
+}
+.Editor input {
+  padding: 10px;
+  cursor: pointer;
+}
+.Editor .emotion_list_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2%;
+}
+.Editor textarea {
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.Editor textarea:focus {
+  outline: none;
+}
+
+.Editor .bottom_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

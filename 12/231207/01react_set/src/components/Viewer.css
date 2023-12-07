@@ -1,0 +1,61 @@
+.Viewer section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.Viewer h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Viewer .emotion_img_wrapper {
+  background: #ececec;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 5px rgba(241, 248, 255, 0.2);
+}
+
+.Viewer .emotion_img_wrapper_1 {
+  background: #64c964;
+}
+.Viewer .emotion_img_wrapper_2 {
+  background: #9dd772;
+}
+.Viewer .emotion_img_wrapper_3 {
+  background: #fdce17;
+}
+.Viewer .emotion_img_wrapper_4 {
+  background: #fd8446;
+}
+.Viewer .emotion_img_wrapper_5 {
+  background: #fd565f;
+}
+
+.Viewer .emotion_description {
+  font-size: 25px;
+  color: #fff;
+}
+
+.Viewer .content-wrapper {
+  width: 90%;
+  background: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+}
+
+.Viewer .content-wrapper p {
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5;
+}
