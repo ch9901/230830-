@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.Box {
+  border: 1px solid #000;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.Box .item-img {
+  width: 100px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
