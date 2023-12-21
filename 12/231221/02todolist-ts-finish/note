@@ -1,0 +1,21 @@
+npx create-react-app . --template typescript
+
+styled-componenets
+@types/styled-components
+
+
+
+dataview : totle+todolist
+  title: 할일 목록이라는 테스트
+  todolist: todoItem에게값을 전달하는 역할
+    todoitem:목록에 입력 된 데이터 + Button
+
+textInput: 사용자가 값을 입력할 수 있는 공간
+textinput : 사용자가 값을 입력 할 수 있는 공간
+
+button : todoitem & text input에서 사용 할 수 있도록 커스텀
+
+-----------------------------
+
+true : 오늘 할 일을 입력 할 input 창이 나오도록
+false: 사라짐

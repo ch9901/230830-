@@ -1,0 +1,64 @@
+npm i react-query
+npm i react-router-dom
+npm install styled-components
+
+--
+
+src > routes 폴더 생성
+
+--
+
+coin.tsx 가상화폐 개별정보
+coins.tsx 여러개 가상화폐 데이터를 목록화
+
+--
+
+styled-components : Theme / 값을 props로 받을 수 있다
+> type이 지정된 것이 없어서 직접 정의해 주어야 한다.
+
+정의
+src >  styled.d.ts > 
+import "styled-components";
+
+//타입정의할때 선언 
+//정의합니다 모듈을 이걸 어떻게?
+declare module "styled-components"{
+export interface DefaultTheme{
+  textColor:string;
+  bgColor:string;
+}
+}
+
+
+--
+
+src > theme.ts >
+import { DefaultTheme } from "styled-components"
+
+export const theme={
+}
+
+
+==
+
+styled-components reset
+import { createGlobalStyle } from "styled-components";
+ > 전역요소로 사용할 스타일이다!
+
+ 
+const GrobalStyle = createGlobalStyle`
+body{
+color:red;
+}`;
+
+function App() {
+  return (
+    <>
+      <GrobalStyle />
+      <Router />
+    </>
+  );
+}
+
+
+
