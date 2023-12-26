@@ -1,0 +1,11 @@
+body {
+  font-weight: 300;
+  color: #000;
+  line-height: 1.2;
+  background: linear-gradient(153deg, rgb(73, 220, 174), rgb(11, 119, 121));
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
