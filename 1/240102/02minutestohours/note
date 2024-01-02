@@ -1,0 +1,53 @@
+npm i recoil npm i @types/styled-components index,tsx import themeProvider
+import darkTheme
+
+<ThemeProvider theme="{darkTheme}">
+  <App />
+</ThemeProvider>
+
+src >> theme.ts export const darkTheme={ textColor:"#fff", bgColor:"2f3640",
+accentColor:"#4cd137", cardBgColor:"transparent" } ========= styled theme 설정
+src >> styled.d.ts import "styled-components"; declare module
+"styled-components" { textColor: string; bgColor: string; accentColor: string;
+cardBgColor: string; } theme.ts import DefaultTheme import { DefaultTheme } from
+"styled-components"; export const darkTheme: DefaultTheme = { textColor: "#fff",
+bgColor: "2f3640", accentColor: "#4cd137", cardBgColor: "transparent", };
+================================= recoil >> state management hooks 비슷한거
+useContext , redux처럼 props전달 비효율 개선 목적으로 생성 recoil atoms => state
+변수 혹은 객체 저장 recoil index.tsx import recoilRoot
+<RecoilRoot>
+  <ThemeProvider theme="{darkTheme}">
+    <App />
+  </ThemeProvider>
+</RecoilRoot>
+
+=================================== src >>Components Atoms.tsx 단위변환기 import
+atom import { atom } from "recoil"; export const minuteState = atom({ key:
+"minutes", default: 0, }); atom안에 값을 사용하기 ㅜ이한 여러가지 hooks
+-useRecoilValue : 값만 가져올 때 -useRecoilState : 값을 가져와서 편집하고자할 때
+app.tsx import -useRecoilState // 구조분해할당으로 useRecoilState(atoms에 선언한
+key) const [minutes, setMinutes] = useRecoilState(minuteState);
+
+
+==
+atoms.tsx
+
+import selector >> 값 가져와서 편집하랄고
+
+export const hourSelector=selector({
+  key:"hours",
+  get:({get})=>{
+    return 121212;
+  }
+})
+
+app.tsx
+
+import hourSelector
+
+const hours = useRecoilValue(hourSelector)
+>> 값 가져오기
+
+<input value={hours} type="number" placeholder="Hours" />
+
+
