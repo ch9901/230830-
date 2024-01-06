@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
-import { theme } from "./theme";
 import { RecoilRoot } from "recoil";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import { darkTheme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,16 +32,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  background: ${(props) => props.theme.bgColor};
+  color: #000;
 	line-height: 1;
-  font-size:10px;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 ol, ul {
 	list-style: none;
-}
-a{
-  text-decoration:none;
-  color:inherit;
 }
 blockquote, q {
 	quotes: none;
@@ -56,16 +51,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*{
-  box-sizing:border-box;
-}
 `;
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <RecoilRoot>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
